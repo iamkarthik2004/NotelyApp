@@ -1,0 +1,200 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: auto;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #333;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Hero Section */
+.hello {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 40px;
+  background: linear-gradient(to right, #e0ecff, #ffffff);
+}
+
+.hello-content {
+  flex: 1;
+  max-width: 50%;
+}
+
+.hello-content h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.hello-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.primary-btn i {
+  margin-left: 8px;
+}
+
+.hello-image {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.floating-emoji {
+  font-size: 48px;
+  animation: float 1s ease-in-out infinite;
+  transition: transform 0.3s;
+}
+
+.floating-emoji:nth-child(1) {
+  animation-delay: 0s;
+}
+.floating-emoji:nth-child(2) {
+  animation-delay: 0.3s;
+}
+.floating-emoji:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.floating-emoji:nth-child(4) {
+  animation-delay: 0.9s;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Year Selection Section */
+.year-section {
+  min-height: 100vh;
+  padding: 60px 40px;
+  background: linear-gradient(to right, #e0ecff, #ffffff);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.year-section h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #007bff;
+}
+
+.card-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.year-card {
+  background-color: white;
+  border-radius: 16px;
+  padding: 30px 40px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+  min-width: 180px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.year-card:hover {
+  transform: translateY(-5px);
+  background-color: #f0f8ff;
+}
+
+/* Notes Section (1st Year Subjects) */
+.notes-section {
+  min-height: 100vh;
+  padding: 60px 40px;
+  background: linear-gradient(to right, #ffffff, #e0ecff); /* Reverse of hero bg */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.notes-section h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.notes-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.notes-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 24px 32px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #444;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+  min-width: 180px;
+  text-align: center;
+}
+
+.notes-card:hover {
+  transform: translateY(-5px);
+  background-color: #e6f2ff;
+}
+
+
