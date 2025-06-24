@@ -18,6 +18,7 @@
 
 </div>
 
+# Live Demo: https://notely-app-indol.vercel.app/
 
 <details open="open">
 <summary>📑 <strong>Table of Contents</strong></summary>
