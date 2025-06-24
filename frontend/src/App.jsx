@@ -95,7 +95,7 @@ function App() {
 
         {/* 3rd Year Notes Section */}
       <section id="third-year" className="notes-section">
-        <h2>2nd Year Subjects 📁</h2>
+        <h2>3rd Year Subjects 📁</h2>
         
         {/* Common Subjects */}
         <div className="semester-section">
@@ -132,57 +132,28 @@ function App() {
           </div>
         </section>
 
-        {/* 3rd Year Notes Section */}
-<section id="third-year" className="notes-section">
-  <h2>3rd Year Subjects 📁</h2>
+        {/* 4th Year Notes Section */}
+<section id="fourth-year" className="notes-section">
+  <h2>4th Year Subjects 📁</h2>
 
   {/* Common Themes */}
+  {/* Semester 7*/}
   <div className="semester-section">
-    <h3>Common Themes (S5 & S6)</h3>
+    <h3>Semester 7 (S7)</h3>
     <div className="notes-container">
-      <div className="notes-card">Core Computing Subjects</div>
-      <div className="notes-card">Project & Assessment Work</div>
-      <div className="notes-card">Managerial / Soft Skills Subjects</div>
-    </div>
-  </div>
-
-  {/* Semester 5 */}
-  <div className="semester-section">
-    <h3>Semester 5 (S5)</h3>
-    <div className="notes-container">
-      <div className="notes-card">Formal Languages and Automata Theory (CST301)</div>
-      <div className="notes-card">Computer Networks (CST303)</div>
-      <div className="notes-card">System Software (CST305)</div>
-      <div className="notes-card">Microprocessors and Microcontrollers (CST307)</div>
-      <div className="notes-card">Management of Software Systems (CST309)</div>
-      <div className="notes-card">Disaster Management (MCN301)</div>
-      <div className="notes-card">System Software and Microprocessors Lab (CSL331)</div>
-      <div className="notes-card">Database Management Systems Lab (CSL333)</div>
-      <div className="notes-card">Remedial/Minor/Honors Course - VAC (S5)</div>
+      <div className="notes-card">Coming Soon</div>
+      
     </div>
   </div>
 
   {/* Semester 6 */}
   <div className="semester-section">
-    <h3>Semester 6 (S6)</h3>
+    <h3>Semester 8 (S8)</h3>
     <div className="notes-container">
-      <div className="notes-card">Compiler Design (CST302)</div>
-      <div className="notes-card">Computer Graphics and Image Processing (CST304)</div>
-      <div className="notes-card">Algorithm Analysis and Design (CST306)</div>
-      <div className="notes-card">Elective - I</div>
-      <div className="notes-card">Industrial Economics and Foreign Trade (HUT300)</div>
-      <div className="notes-card">Comprehensive Course Work (CST308)</div>
-      <div className="notes-card">Networking Lab (CSL332)</div>
-      <div className="notes-card">Miniproject (CSD334)</div>
-      <div className="notes-card">Remedial/Minor/Honors Course - VAC (S6)</div>
+      <div className="notes-card">Coming Soon</div>
     </div>
   </div>
 </section>
-
-
-
-
-
 
     </>
   )
