@@ -5,8 +5,8 @@
 ---
 
 ## 👨‍💻 Contributors
-Karthik Krishnan (Frontend)
-Jameson Joseph (Backend)
+- Karthik Krishnan (Frontend)
+- Jameson Joseph (Backend)
 
 
 ## 🌟 Features
