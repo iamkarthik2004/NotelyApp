@@ -18,7 +18,28 @@
 
 </div>
 
-# Live Demo: https://notely-app-indol.vercel.app/
+## 🚀 Live Demo
+
+✨ Experience NotelyApp in action:  
+🔗 [Click here to try the Live App](https://notely-app-indol.vercel.app/)  
+Hosted on **Vercel**, lightning fast and mobile-ready!
+
+
+## 👨‍💻 Authors & Collaborators
+
+- **Karthik Krishnan**  
+  🎯 Role: Frontend
+  🔗 [GitHub](https://github.com/iamkarthik2004) | [LinkedIn](https://www.linkedin.com/in/karthikkk708/)
+
+- **Jameson Joseph**  
+  🎯 Role: Backend
+  🔗 [GitHub](https://github.com/JamesonJoseph) | [LinkedIn](https://www.linkedin.com/in/jameson-joseph-375b03316/)
+
+- **Vijay Pradeep**  
+  🎯 Role: 
+  🔗 [GitHub](https://github.com/VJVN100) | [LinkedIn](https://www.linkedin.com/in/vijay-pradeep-801a2b332/)
+
+
 
 <details open="open">
 <summary>📑 <strong>Table of Contents</strong></summary>
