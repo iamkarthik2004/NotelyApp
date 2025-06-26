@@ -36,7 +36,7 @@ Hosted on **Vercel**, lightning fast and mobile-ready!
   🔗 [GitHub](https://github.com/JamesonJoseph) | [LinkedIn](https://www.linkedin.com/in/jameson-joseph-375b03316/)
 
 - **Vijay Pradeep**  
-  🎯 Role: 
+  🎯 Role: Backend
   🔗 [GitHub](https://github.com/VJVN100) | [LinkedIn](https://www.linkedin.com/in/vijay-pradeep-801a2b332/)
 
 
