@@ -1,0 +1,446 @@
+/* Design System */
+:root {
+  /* Colors */
+  --primary: #2563eb;
+  --primary-dark: #1d4ed8;
+  --primary-light: #3b82f6;
+  --secondary: #64748b;
+  --accent: #8b5cf6;
+  --background: #f8fafc;
+  --surface: #ffffff;
+  --text: #1e293b;
+  --text-light: #64748b;
+  --border: #e2e8f0;
+  --error: #ef4444;
+  --success: #22c55e;
+
+  /* Spacing */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+
+  /* Border Radius */
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-full: 9999px;
+}
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: auto;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+  width: 100%;
+  overflow-x: hidden;
+  line-height: 1.5;
+}
+
+/* Hero Section */
+.hello {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-2xl) var(--spacing-xl);
+  background: linear-gradient(135deg, var(--background) 0%, var(--surface) 100%);
+}
+
+.hello-content {
+  flex: 1;
+  max-width: 600px;
+  padding: var(--spacing-xl);
+}
+
+.hello-content h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: var(--spacing-lg);
+  background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hello-content p {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  margin-bottom: var(--spacing-xl);
+  color: var(--text-light);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-md) var(--spacing-lg);
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: var(--radius-md);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  box-shadow: var(--shadow-md);
+  gap: var(--spacing-sm);
+}
+
+.btn:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.btn i {
+  transition: transform 0.3s ease;
+}
+
+.btn:hover i {
+  transform: translateX(4px);
+}
+
+/* Year Selection Section */
+.year-section {
+  min-height: 100vh;
+  padding: var(--spacing-2xl) var(--spacing-xl);
+  background: var(--surface);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.year-section h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: var(--spacing-2xl);
+  color: var(--primary);
+  text-align: center;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-lg);
+  width: 100%;
+  max-width: 1200px;
+  padding: var(--spacing-lg);
+}
+
+.year-card {
+  background-color: var(--surface);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-xl);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary);
+  box-shadow: var(--shadow-md);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  width: 100%;
+  background: none;
+}
+
+.year-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--primary);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Notes Section */
+.notes-section {
+  min-height: 100vh;
+  padding: var(--spacing-2xl) var(--spacing-xl);
+  background: linear-gradient(135deg, var(--surface) 0%, var(--background) 100%);
+}
+
+.notes-section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: var(--spacing-xl);
+  color: var(--primary);
+  text-align: center;
+}
+
+.notes-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-lg);
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--spacing-lg);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hello {
+    flex-direction: column;
+    text-align: center;
+    padding: var(--spacing-xl) var(--spacing-lg);
+  }
+
+  .hello-content {
+    max-width: 100%;
+    padding: var(--spacing-lg);
+  }
+
+  .hello-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .card-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+/* Hero Section */
+.hello {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 40px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4e9f2 100%);
+}
+
+.hello-image {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.floating-emoji {
+  font-size: 64px;
+  animation: float 3s ease-in-out infinite;
+  transition: transform 0.3s;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+}
+
+.floating-emoji:nth-child(1) { animation-delay: 0s; }
+.floating-emoji:nth-child(2) { animation-delay: 0.8s; }
+.floating-emoji:nth-child(3) { animation-delay: 1.6s; }
+.floating-emoji:nth-child(4) { animation-delay: 2.4s; }
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Year Selection Section */
+.year-section {
+  min-height: 100vh;
+  padding: 80px 40px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.year-section h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #1a73e8;
+  position: relative;
+}
+
+.year-section h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background: #1a73e8;
+  border-radius: 2px;
+}
+
+.card-container {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.year-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 40px 50px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #1a73e8;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 200px;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid #e4e9f2;
+}
+
+.year-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(26, 115, 232, 0.15);
+  border-color: #1a73e8;
+}
+
+/* Notes Section */
+.notes-section {
+  min-height: 100vh;
+  padding: 80px 40px;
+  background: linear-gradient(135deg, #ffffff 0%, #f5f7fa 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.notes-section h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #1a73e8;
+  position: relative;
+}
+
+.notes-section h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 4px;
+  background: #1a73e8;
+  border-radius: 2px;
+}
+
+.notes-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  max-width: 1200px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.notes-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 30px 40px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #2c3e50;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 250px;
+  text-align: center;
+  border: 2px solid #e4e9f2;
+  position: relative;
+  overflow: hidden;
+}
+
+.notes-card.clickable {
+  position: relative;
+  z-index: 1;
+}
+
+.notes-card.clickable::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, #1a73e8 0%, #4285f4 100%);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 0.3s ease;
+  border-radius: 10px;
+}
+
+.notes-card.clickable:hover {
+  color: #ffffff;
+  transform: translateY(-5px);
+  border-color: transparent;
+}
+
+.notes-card.clickable:hover::before {
+  opacity: 1;
+}
+
+/* Semester Section Styles */
+.semester-section {
+  margin-bottom: 60px;
+  width: 100%;
+}
+
+.semester-section h3 {
+  font-size: 24px;
+  color: #1a73e8;
+  margin-bottom: 30px;
+  position: relative;
+  display: inline-block;
+}
+
+.semester-section h3::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #1a73e8;
+  border-radius: 1.5px;
+}
+
+

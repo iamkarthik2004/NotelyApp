@@ -1,0 +1,240 @@
+.loading-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.97) 0%, rgba(20, 20, 30, 0.97) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  backdrop-filter: blur(5px);
+}
+
+.loading-content {
+  text-align: center;
+  color: #00F5FF;
+  padding: 2.5rem;
+  max-width: 500px;
+  border-radius: 20px;
+  background: rgba(20, 20, 30, 0.95);
+  box-shadow: 0 0 30px rgba(0, 245, 255, 0.2);
+  animation: glow 2s infinite alternate;
+  border: 1px solid rgba(0, 245, 255, 0.1);
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 20px rgba(0, 245, 255, 0.2);
+  }
+  to {
+    box-shadow: 0 0 40px rgba(0, 245, 255, 0.4);
+  }
+}
+
+.loading-spinner {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 1.5rem;
+}
+
+.loading-spinner:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #00F5FF;
+  border-color: #00F5FF transparent #00F5FF transparent;
+  animation: loading-spinner 1.2s linear infinite;
+}
+
+@keyframes loading-spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loading-content h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #00F5FF 0%, #00B4D8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.status-message,
+.server-status {
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.status-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.server-error {
+  color: #ff4444;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.error-details {
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.server-message {
+  color: #FFC107;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.wake-up-message {
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 1rem;
+}
+
+.time-info {
+  margin: 1rem 0;
+  padding: 0.75rem;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.time-elapsed {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9rem;
+  font-family: monospace;
+}
+
+.retry-info {
+  margin-top: 1.5rem;
+}
+
+.retry-info p {
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.progress-bar {
+  height: 6px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+  margin: 0.75rem 0;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background-color: #00F5FF;
+  border-radius: 3px;
+  transition: all 0.5s ease;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.6; }
+  50% { opacity: 1; }
+  100% { opacity: 0.6; }
+}
+
+.retry-button {
+  background: linear-gradient(135deg, #00F5FF 0%, #00B4D8 100%);
+  color: #000;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.retry-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 20px rgba(0, 245, 255, 0.4);
+}
+
+.retry-button i {
+  font-size: 0.9rem;
+  transition: transform 0.3s ease;
+}
+
+.retry-button:hover i {
+  transform: rotate(180deg);
+}
+
+.loading-note {
+  margin-top: 2rem;
+  padding: 1rem;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.loading-note p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.loading-note i {
+  color: #00F5FF;
+  font-size: 1rem;
+}
+
+/* Error State Specific Styles */
+.server-status.error {
+  background: rgba(255, 68, 68, 0.05);
+  border-color: rgba(255, 68, 68, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .loading-content {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+
+  .loading-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .status-icon {
+    font-size: 2rem;
+  }
+
+  .server-message,
+  .server-error {
+    font-size: 1rem;
+  }
+} 
