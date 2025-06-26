@@ -4,17 +4,6 @@
 # NotelyApp
 
 
-<h3 align="center">A professional, modern, and feature-rich frontend web application</h3>
-
-</div>
-
-
-<div align="center">
-
-![Stars](https://img.shields.io/github/stars/username/NotelyApp?style=flat-square&labelColor=343b41) ![Forks](https://img.shields.io/github/forks/username/NotelyApp?style=flat-square&labelColor=343b41) ![Issues](https://img.shields.io/github/issues/username/NotelyApp?style=flat-square&labelColor=343b41) ![License](https://img.shields.io/github/license/username/NotelyApp?style=flat-square&labelColor=343b41) ![Version](https://img.shields.io/badge/version-1.0.0-00F5FF?style=flat-square) ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square) ![Language](https://img.shields.io/badge/Javascript-00F5FF?style=flat-square&logo=javascript&logoColor=white) ![Last Commit](https://img.shields.io/github/last-commit/username/NotelyApp?style=flat-square&labelColor=343b41)
-
-</div>
-
 ## 🚀 Live Demo
 
 ✨ Experience NotelyApp in action:  
