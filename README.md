@@ -1,5 +1,4 @@
-
-# # NotelyApp
+## NotelyApp
 
 ## 🚀 Live Demo
 
