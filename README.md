@@ -3,6 +3,7 @@
 
 # NotelyApp
 
+</div>
 
 ## 🚀 Live Demo
 
@@ -30,6 +31,7 @@ Hosted on **Vercel**, lightning fast and mobile-ready!
 
 <details open="open">
 <summary>📑 <strong>Table of Contents</strong></summary>
+
 
 - [📖 About](#-about)
 - [✨ Features](#-features)
