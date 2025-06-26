@@ -1,9 +1,5 @@
-<div align="center">
 
-
-# NotelyApp
-
-</div>
+# # NotelyApp
 
 ## 🚀 Live Demo
 
@@ -26,29 +22,6 @@ Hosted on **Vercel**, lightning fast and mobile-ready!
 - **Vijay Pradeep**  
   🎯 Role: Backend
   🔗 [GitHub](https://github.com/VJVN100) | [LinkedIn](https://www.linkedin.com/in/vijay-pradeep-801a2b332/)
-
-
-
-<details open="open">
-<summary>📑 <strong>Table of Contents</strong></summary>
-
-
-- [📖 About](#-about)
-- [✨ Features](#-features)
-- [🛠️ Technologies](#️-technologies)
-- [📊 Architecture](#-architecture)
-- [📁 Project Structure](#-project-structure)
-- [🚀 Getting Started](#-getting-started)
-- [📋 Usage](#-usage)
-- [🗺️ Roadmap](#️-roadmap)
-- [🤝 Contributing](#-contributing)
-- [📄 License](#-license)
-- [👨‍💻 Authors](#-authors)
-- [🙏 Acknowledgments](#-acknowledgments)
-
-</details>
-
----
 
 
 <a name="-about"></a>
@@ -74,37 +47,7 @@ A modern, responsive web application crafted with cutting-edge technologies to d
 <div align="center">
   <img src="https://user-images.githubusercontent.com/74038190/212284158-e840e285-664b-44d7-b79b-e264b5e54825.gif" width="400">
 </div>
-
-
 <a name="-features"></a>
-<div align="center">
-
-## ✨ Features
-
-<img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="100">
-
-</div>
-
-<div align="center">
-
-| Core Capability | Description |
-|:---------------:|:------------|
-| 🎨 **Design** | Modern, responsive interfaces with attention to detail |
-| ⚡ **Performance** | Optimized for speed with efficient code patterns |
-| 🔒 **Security** | Comprehensive security measures against common threats |
-| 🔧 **Maintainability** | Clean code architecture for easy updates and extensions |
-
-</div>
-
-### Detailed Features
-
-🎨 **Responsive Design** - Beautiful interfaces that work across all devices and screen sizes
-📱 **Mobile-First Approach** - Optimized for mobile with intuitive touch interactions
-⚡ **Performance Optimized** - Fast loading times with efficient asset delivery
-♿ **Accessibility (a11y)** - WCAG compliant design for all users
-🗄️ **Optimized Database** - Well-structured database with proper indexing and relations
-🔄 **Real-time Updates** - Live data synchronization capabilities
-📊 **Analytics Integration** - Built-in systems for tracking and reporting
 
 
 <div align="center">
@@ -134,38 +77,6 @@ A modern, responsive web application crafted with cutting-edge technologies to d
 
 
 <a name="-architecture"></a>
-<div align="center">
-
-## 📊 Architecture
-
-<img src="https://user-images.githubusercontent.com/74038190/212257454-16e3712e-945a-4ca2-b238-408ad0bf87e6.gif" width="100">
-
-</div>
-
-This project follows a component-based frontend architecture:
-
-```mermaid
-graph TD
-    App[App Entry] --> Pages[Page Components]
-    Pages --> Components[UI Components]
-    Components --> Hooks[Custom Hooks]
-    Pages --> Services[API Services]
-    Services --> External[External APIs]
-    
-    style App fill:#4285F4,stroke:#333,stroke-width:1px
-    style Pages fill:#FBBC05,stroke:#333,stroke-width:1px
-    style Components fill:#34A853,stroke:#333,stroke-width:1px
-    style Hooks fill:#EA4335,stroke:#333,stroke-width:1px
-    style Services fill:#999999,stroke:#333,stroke-width:1px
-```
-
-- **App Entry**: Main application initialization and routing
-- **Page Components**: Container components for different views/routes
-- **UI Components**: Reusable interface elements and widgets
-- **Custom Hooks**: Shared stateful logic between components
-- **API Services**: Client-side services for data fetching and manipulation
-
-
 <div align="center">
 
 ## 📁 Project Structure
