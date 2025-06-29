@@ -182,7 +182,8 @@ function App() {
               'Discrete Mathematical Structures (DMS)',
               'Data Strcutures',
               'Logic System Design',
-              'OOPS in JAVA'
+              'OOPS in JAVA',
+              'Sustainable Engineering'
             ].map((subject) => (
               <div 
                 key={subject} 
@@ -200,12 +201,11 @@ function App() {
           <h3>Semester 4 (S4)</h3>
           <div className="notes-container">
             {[
-              'Theory of Computation',
-              'Microprocessors',
-              'Compiler Design',
-              'Computer Networks',
-              'Software Engineering',
-              'Environmental Science'
+              'Computer Organization & Architecture (COA)',
+              'Graph Theory',
+              'DBMS',
+              'Operating Systems (OS)',
+              'Constitution of India'
             ].map((subject) => (
               <div 
                 key={subject} 
@@ -229,10 +229,11 @@ function App() {
           <div className="notes-container">
             {[
               'Formal Languages and Automata Theory',
-              'Computer Architecture',
+              'Computer Networks',
               'System Software',
-              'Design and Analysis of Algorithms',
-              'Industrial Economics'
+              'Microprocessors and Microcontrollers	',
+              'Management of Software Systems',
+              'Disaster Management'
             ].map((subject) => (
               <div 
                 key={subject} 
@@ -251,10 +252,10 @@ function App() {
           <div className="notes-container">
             {[
               'Compiler Design',
-              'Computer Networks',
-              'Data Mining and Warehousing',
-              'Mobile Computing',
-              'Web Technologies'
+              'Computer Graphics And Image Processing',
+              'Algorithm Analysis And Design',
+              'Elective - I',
+              'Industrial Economics And Foreign Trade'
             ].map((subject) => (
               <div 
                 key={subject} 
@@ -277,11 +278,11 @@ function App() {
           <h3>Semester 7 (S7)</h3>
           <div className="notes-container">
             {[
-              'Distributed Computing',
-              'Cloud Computing',
-              'Machine Learning',
-              'Information Security',
-              'Project Management'
+              'Artificial Intelligence',
+              'Compiler Lab',
+              'Program Elective II',
+              'Open Elective',
+              'VAC S7'
             ].map((subject) => (
               <div 
                 key={subject} 
@@ -299,11 +300,11 @@ function App() {
           <h3>Semester 8 (S8)</h3>
           <div className="notes-container">
             {[
-              'Data Science',
-              'Internet of Things',
-              'Natural Language Processing',
-              'Software Testing',
-              'Digital Image Processing'
+              'DISTRIBUTED COMPUTING',
+              'Project Phare II',
+              'PROGRAM ELECTIVE III',
+              'PROGRAM ELECTIVE IV',
+              'PROGRAM ELECTIVE V'
             ].map((subject) => (
               <div 
                 key={subject} 
