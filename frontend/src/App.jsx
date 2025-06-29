@@ -179,11 +179,10 @@ function App() {
           <h3>Semester 3 (S3)</h3>
           <div className="notes-container">
             {[
-              'Graph Theory',
-              'Computer Organization & Architecture (COA)',
-              'OOPS in JAVA',
-              'Operating Systems (OS)',
-              'Constitution of India'
+              'Discrete Mathematical Structures (DMS)',
+              'Data Strcutures',
+              'Logic System Design',
+              'OOPS in JAVA'
             ].map((subject) => (
               <div 
                 key={subject} 
