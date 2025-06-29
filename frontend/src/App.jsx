@@ -181,7 +181,7 @@ function App() {
             {[
               'Graph Theory',
               'Computer Organization & Architecture (COA)',
-              'Database Management Systems (DBMS)',
+              'OOPS in JAVA',
               'Operating Systems (OS)',
               'Constitution of India'
             ].map((subject) => (
