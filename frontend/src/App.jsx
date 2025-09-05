@@ -281,8 +281,7 @@ function App() {
               'Artificial Intelligence',
               'Compiler Lab',
               'Program Elective II',
-              'Open Elective',
-              'VAC S7'
+              'Open Elective'
             ].map((subject) => (
               <div 
                 key={subject} 
